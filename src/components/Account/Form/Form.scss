@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .subtext {
+    color: #666;
+    margin-top: 25px;
+    font-size: 13px;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 150px 0;
+    label {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    input {
+      display: block;
+      width: 100%;
+      outline: none;
+    }
+    .input {
+      border: solid grey 0.5px;
+      padding: 15px 20px;
+    }
+    .login {
+      border: solid transparent 0.5px;
+      background-color: #222;
+      color: #fff;
+      padding: 15px 0;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        background-color: #fff;
+        border: solid #333 0.5px;
+        color: #333;
+      }
+    }
+  }
+}
