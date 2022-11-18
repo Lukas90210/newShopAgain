@@ -46,6 +46,7 @@ const Footer = () => {
     transition: 0.2s;
     border-bottom: 1px solid #555;
     font-size: 13px;
+    line-height: 1;
     &:hover {
       color: #000;
       border-bottom: 1px solid transparent;

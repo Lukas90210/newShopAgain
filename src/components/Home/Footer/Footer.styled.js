@@ -53,6 +53,11 @@ export const ListWrapper = styled.div`
 `;
 export const ListItem = styled.div`
   margin: 0 auto;
+  ul {
+    li {
+      height: auto;
+    }
+  }
   @media (max-width: 968px) {
     display: none;
   }
@@ -88,17 +93,24 @@ export const Icons = styled.div`
   width: 40%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @media (max-width: 968px) {
+    width: 100px;
+    display: flex;
+    margin-left: 10px;
+  }
   .IconItem {
     margin-top: 25px;
     color: #666;
     transition: 0.2s;
     cursor: pointer;
+
+    @media (max-width: 968px) {
+      margin: 0 auto;
+    }
     &:hover {
       color: #000;
     }
-  }
-  @media (max-width: 968px) {
-    width: 70px;
   }
 `;
 
@@ -123,12 +135,12 @@ export const FooterMedia = styled.div`
 `;
 export const ListItemMedia = styled.div`
   margin: 5px 0;
-
   ul {
     margin: 0;
-
     li {
       font-size: 12px;
+      height: auto;
+      margin-bottom: 20px;
     }
   }
   .linkMedia {
@@ -138,6 +150,7 @@ export const ListItemMedia = styled.div`
   }
   .item_list {
     display: none;
+
     &_active {
       @media (max-width: 968px) {
         margin: 20px 0;

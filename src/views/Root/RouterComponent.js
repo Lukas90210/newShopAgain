@@ -6,6 +6,7 @@ import OurStory from "../About/OurStory/OurStory";
 import ContactUs from "../About/ContactUs/ContactUs";
 import Faqs from "../About/Faqs/Faqs";
 import Journal from "../About/Journal/Journal";
+import Shop from "../Shop/Shop";
 import React from "react";
 
 class RouterComponent extends React.Component {
@@ -19,6 +20,7 @@ class RouterComponent extends React.Component {
           <Route path="/ContactUs" component={ContactUs} />
           <Route path="/Faqs" component={Faqs} />
           <Route path="/Journal" component={Journal} />
+          <Route path="/Shop" component={Shop} />
         </Switch>
       </Router>
     );
