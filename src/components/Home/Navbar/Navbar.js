@@ -26,11 +26,11 @@ const Navbar = () => {
               <Link className="navLink">NEW</Link>
             </li>
 
-            <li className="navLI">
+            <li className="dropShop">
               <Link to="/Shop" className="navLink">
                 SHOP
               </Link>
-              <ul className="drop">
+              <ul className="dropShopContainer">
                 <div className="dropMenu">
                   <Link className="dropLink">ALL</Link>
                 </div>
@@ -95,8 +95,26 @@ const Navbar = () => {
             <li>
               <Link className="navLink">BRANDS</Link>
             </li>
-            <li>
+
+            <li className="dropSale">
               <Link className="navLink">SALE</Link>
+              <ul className="dropSaleContainer">
+                <li>
+                  <Link className="dropSaleLink">Pants</Link>
+                </li>
+                <li>
+                  <Link className="dropSaleLink">Hats</Link>
+                </li>
+                <li>
+                  <Link className="dropSaleLink">Last Season</Link>
+                </li>
+                <li>
+                  <Link className="dropSaleLink">Products -50%</Link>
+                </li>
+                <li>
+                  <Link className="dropSaleLink">All Other</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <a className="navLink" href="/OurStory">

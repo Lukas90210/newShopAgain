@@ -8,6 +8,9 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   border-bottom: 0.5px solid #666;
   padding-bottom: 3px;
+  li {
+    height: auto;
+  }
 `;
 const NoneLink = styled(Link)`
   text-decoration: none;

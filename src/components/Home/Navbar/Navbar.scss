@@ -98,6 +98,7 @@ nav {
   font-weight: 400;
   color: #333;
   margin-right: 15px;
+  position: relative;
 
   a {
     display: block;
@@ -115,7 +116,6 @@ nav {
 
 .navMenu {
   width: 100%;
-  // margin: 0 70px;
 
   @media (max-width: 980px) {
     margin-left: -100%;
@@ -138,7 +138,6 @@ nav {
 ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  // align-items: center;
   flex-wrap: wrap;
   min-height: 80px;
 
@@ -160,13 +159,13 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+
     .navLink {
       text-decoration: none;
       transition: 0.3s;
       font-weight: 300;
       border-bottom: 0.5px solid #000;
       color: #333;
-
       height: 100%;
       width: 100%;
       display: flex;
@@ -181,7 +180,6 @@ ul {
 
       &:hover {
         color: #000;
-
         @media (max-width: 980px) {
           border: 0;
           color: #666;
@@ -213,11 +211,13 @@ ul {
   }
 }
 //inputs and buttons
+
 input {
   display: none;
 }
+//dropdowns
 
-.drop {
+.dropShopContainer {
   display: none;
   position: absolute;
   top: 80px;
@@ -226,7 +226,6 @@ input {
   width: 20%;
   border-bottom: 0.5px solid #000;
   width: 100%;
-
   .dropMenu {
     display: flex;
     flex-direction: column;
@@ -263,11 +262,49 @@ input {
   }
 }
 
-.navLI:hover .drop {
+.dropSale {
+  position: relative;
+  .dropSaleContainer {
+    display: none;
+    position: absolute;
+    top: 80px;
+    background-color: #fff;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    width: 100%;
+  }
+}
+
+.dropShop:hover .dropShopContainer {
   display: flex;
   justify-content: space-between;
   align-items: start;
   padding: 50px 100px;
+  @media (max-width: 980px) {
+    display: none;
+  }
+}
+.dropSale:hover .dropSaleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 20px 25px;
+  li {
+    line-height: 2.5;
+    height: auto;
+    text-align: left;
+    .dropSaleLink {
+      text-decoration: none;
+      color: #000;
+      font-weight: normal;
+      transition: 0.2s;
+      &:hover {
+        color: #666;
+      }
+    }
+  }
   @media (max-width: 980px) {
     display: none;
   }
